@@ -3,7 +3,7 @@
 ![Teleprompter Plus](https://github.com/AjarnSpencer/teleprompter-plus/raw/main/build/icons/teleprompterplus.png)
 
 A professional grade, multi-platform, free software teleprompter for anyone to use.
-- **Note:** This repository is stillmissinig soke files and will not yet be ready for release util I (The Author), have uploaded all files, and then tried a fresh install of the teleprompter. However, the index,html file can be used standalone as a simple browser based teleprompter app too for those who wish to try it before it is ready as a repository.
+- **Note:** This repository is still missing some files and will not yet be ready for release until I (The Author), have uploaded all files, and then tried a fresh install of the teleprompter. However, the index.html file can be used standalone as a simple browser based teleprompter app too for those who wish to try it before it is ready as a repository.
 ---
 
 [![GitHub license](https://img.shields.io/badge/license-GPL3-blue.svg)](https://github.com/AjarnSpencer/teleprompter-plus/blob/main/LICENSE)
