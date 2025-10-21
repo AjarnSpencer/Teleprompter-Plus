@@ -1,0 +1,10 @@
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+abi &lt;abi/4.0&gt;,
+include &lt;tunables/global&gt;
+
+profile browser-teleprompter &quot;/opt/Teleprompter/browser-teleprompter&quot; flags=(unconfined) {
+  userns,
+
+  # Site-specific additions and overrides. See local/README for details.
+  include if exists &lt;local/browser-teleprompter&gt;
+}</pre>
