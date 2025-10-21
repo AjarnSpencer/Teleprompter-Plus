@@ -11,6 +11,8 @@ A professional grade, multi-platform, free software teleprompter for anyone to u
 ## Introduction
 
 "Teleprompter Plus" is built with web technologies so anyone can customize it to their needs. It can be run as a standalone desktop application using Electron.
+---
+![Teleprompter Plus Reader App](https://github.com/AjarnSpencer/Teleprompter-Plus/blob/main/build/icons/teleprompter-plus-screenshot.png)
 
 ## Running from Source
 
