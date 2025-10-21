@@ -70,8 +70,3 @@ Ajarn Spencer Littlewood & Gemini-CLI Unleashed
 ## License
 
 This software is shared under the [GPL3](https://github.com/AjarnSpencer/teleprompter-plus/blob/main/LICENSE) license.
-
-
-
-
-

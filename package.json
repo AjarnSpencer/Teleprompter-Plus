@@ -1,0 +1,128 @@
+{
+  "name": "teleprompter-plus",
+  "email": "ajarnspencer@gmail.com",
+  "homepage": "https://www.ajarnspencer.com",
+  "description": "A professional, free, and open-source teleprompter application.",
+  "license": "GPL-3.0+",
+  "version": "2.5.0",
+  "keywords": [
+    "teleprompter",
+    "plus",
+    "kubuntu",
+    "linux",
+    "multiplatform",
+    "portable",
+    "software",
+    "local",
+    "online"
+  ],
+  "author": {
+    "name": "Ajarn Spencer Littlewood",
+    "email": "ajarnspencer@gmail.com",
+    "url": "https://www.ajarnspencer.com"
+  },
+  "contributors": [
+    "Ajarn Spencer Littlewood <ajarnspencer@gmail.com> (https://www.ajarnspencer.com)",
+    "Gemini-CLI Unleashed (https://sites.google.com/view/gemini-cli/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AjarnSpencer/teleprompter-plus"
+  },
+  "bugs": {
+    "url": "https://github.com/AjarnSpencer/teleprompter-plus/issues"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "7zip-bin": "^3.1.0"
+  },
+  "devDependencies": {
+    "electron": "1.8.8",
+    "electron-builder": "20.14.7"
+  },
+  "scripts": {
+    "setup": "npm install & cd app & npm install & cd ..",
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "dist:linux": "electron-builder build --linux --ia32 --x64",
+    "dist:linux32": "electron-builder build --linux --ia32",
+    "dist:linux64": "electron-builder build --linux --x64",
+    "dist:linuxarm": "electron-builder build --linux --armv7l",
+    "dist:linuxarm64": "electron-builder build --linux --arm64",
+    "dist:macos": "electron-builder build --mac",
+    "dist:win": "electron-builder build --win --ia32 --x64",
+    "dist:win32": "electron-builder build --win --ia32",
+    "dist:win64": "electron-builder build --win --x64",
+    "pack": "electron-builder build --dir"
+  },
+  "engine": "node >= 8.2.1",
+  "preferGlobal": "false",
+  "copyright": "Copyright © year ${author}",
+  "build": {
+    "appId": "com.ajarnspencer.teleprompterplus",
+    "productName": "Teleprompter Plus",
+    "asar": "true",
+    "squirrelWindows": {
+      "msi": false,
+      "loadingGif": "build/install-spinner.png",
+      "remoteReleases": "https://github.com/AjarnSpencer/teleprompter-plus"
+    },
+    "nsis": {
+      "oneClick": "false",
+      "perMachine": "true",
+      "allowElevation": "true",
+      "allowToChangeInstallationDirectory": true
+    },
+    "win": {
+      "icon": "build/icons/teleprompterplus.png",
+      "target": "nsis"
+    },
+    "dmg": {
+      "title": "Teleprompter Plus - ${version}",
+      "iconSize": 64,
+      "iconTextSize": 11,
+      "contents": [
+        {
+          "x": 130,
+          "y": 108,
+          "type": "file"
+        },
+        {
+          "x": 130,
+          "y": 222,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "mac": {
+      "target": "pkg",
+      "icon": "build/icons/teleprompterplus.png",
+      "category": "public.app-category.video",
+      "type": "distribution"
+    },
+    "deb": {
+      "icon": "build/icons/teleprompterplus.png"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "tar.gz",
+        "deb",
+        "rpm",
+        "freebsd",
+        "pacman"
+      ],
+      "icon": "build/icons/teleprompterplus.png",
+      "executableName": "teleprompter-plus",
+      "synopsis": "A professional, free, and open-source teleprompter application.",
+      "vendor": "Ajarn Spencer Littlewood <ajarnspencer@gmail.com> (https://www.ajarnspencer.com)",
+      "maintainer": "Ajarn Spencer Littlewood <ajarnspencer@gmail.com> (https://www.ajarnspencer.com)",
+      "description": "A professional, free, and open-source teleprompter application. Built with web technologies so anyone can customize it. Features include: mirroring, dual-screen support, rich text editing, image support, custom styles, tablet mode, webcam mode, auto-save and accelerated graphics.",
+      "category": "AudioVideo;Video;Sequencer",
+      "packageCategory": "Video"
+    },
+    "compression": "maximum"
+  }
+}
