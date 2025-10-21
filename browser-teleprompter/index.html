@@ -1,0 +1,33 @@
+<pre style='color:#1f1c1b;background-color:#ffffff;'>
+<b><span style='color:#0057ae;'>&lt;!DOCTYPE </span></b>html<b><span style='color:#0057ae;'>&gt;</span></b>
+<b>&lt;html&gt;</b>
+<b>&lt;head&gt;</b>
+  <b>&lt;title&gt;</b>Teleprompter<b>&lt;/title&gt;</b>
+  <b>&lt;link</b><span style='color:#006e28;'> rel=</span><span style='color:#bf0303;'>&quot;preconnect&quot;</span><span style='color:#006e28;'> href=</span><span style='color:#bf0303;'>&quot;https://fonts.googleapis.com&quot;</span><b>&gt;</b>
+  <b>&lt;link</b><span style='color:#006e28;'> rel=</span><span style='color:#bf0303;'>&quot;preconnect&quot;</span><span style='color:#006e28;'> href=</span><span style='color:#bf0303;'>&quot;https://fonts.gstatic.com&quot;</span><span style='color:#006e28;'> crossorigin</span><b>&gt;</b>
+  <b>&lt;link</b><span style='color:#006e28;'> href=</span><span style='color:#bf0303;'>&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@400;700</span><span style='color:#bf0303;'>&amp;</span><span style='color:#bf0303;'>display=swap&quot;</span><span style='color:#006e28;'> rel=</span><span style='color:#bf0303;'>&quot;stylesheet&quot;</span><b>&gt;</b>
+  <b>&lt;link</b><span style='color:#006e28;'> rel=</span><span style='color:#bf0303;'>&quot;stylesheet&quot;</span><span style='color:#006e28;'> href=</span><span style='color:#bf0303;'>&quot;style.css&quot;</span><b>&gt;</b>
+<b>&lt;/head&gt;</b>
+<b>&lt;body&gt;</b>
+  <b>&lt;div</b><span style='color:#006e28;'> class=</span><span style='color:#bf0303;'>&quot;controls&quot;</span><b>&gt;</b>
+    <b>&lt;label</b><span style='color:#006e28;'> for=</span><span style='color:#bf0303;'>&quot;speed&quot;</span><b>&gt;</b>Scroll Speed:<b>&lt;/label&gt;</b>
+    <b>&lt;input</b><span style='color:#006e28;'> type=</span><span style='color:#bf0303;'>&quot;range&quot;</span><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;speed&quot;</span><span style='color:#006e28;'> min=</span><span style='color:#bf0303;'>&quot;1&quot;</span><span style='color:#006e28;'> max=</span><span style='color:#bf0303;'>&quot;10&quot;</span><span style='color:#006e28;'> value=</span><span style='color:#bf0303;'>&quot;5&quot;</span><b>&gt;</b>
+    <b>&lt;label</b><span style='color:#006e28;'> for=</span><span style='color:#bf0303;'>&quot;fontSize&quot;</span><b>&gt;</b>Font Size:<b>&lt;/label&gt;</b>
+    <b>&lt;input</b><span style='color:#006e28;'> type=</span><span style='color:#bf0303;'>&quot;range&quot;</span><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;fontSize&quot;</span><span style='color:#006e28;'> min=</span><span style='color:#bf0303;'>&quot;12&quot;</span><span style='color:#006e28;'> max=</span><span style='color:#bf0303;'>&quot;72&quot;</span><span style='color:#006e28;'> value=</span><span style='color:#bf0303;'>&quot;36&quot;</span><b>&gt;</b>
+    <b>&lt;label</b><span style='color:#006e28;'> for=</span><span style='color:#bf0303;'>&quot;backgroundColor&quot;</span><b>&gt;</b>Background Color:<b>&lt;/label&gt;</b>
+    <b>&lt;input</b><span style='color:#006e28;'> type=</span><span style='color:#bf0303;'>&quot;color&quot;</span><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;backgroundColor&quot;</span><span style='color:#006e28;'> value=</span><span style='color:#bf0303;'>&quot;#000000&quot;</span><b>&gt;</b>
+    <b>&lt;label</b><span style='color:#006e28;'> for=</span><span style='color:#bf0303;'>&quot;fontColor&quot;</span><b>&gt;</b>Font Color:<b>&lt;/label&gt;</b>
+    <b>&lt;input</b><span style='color:#006e28;'> type=</span><span style='color:#bf0303;'>&quot;color&quot;</span><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;fontColor&quot;</span><span style='color:#006e28;'> value=</span><span style='color:#bf0303;'>&quot;#ffffff&quot;</span><b>&gt;</b>
+    <b>&lt;button</b><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;scrollButton&quot;</span><b>&gt;</b>Start<b>&lt;/button&gt;</b>
+    <b>&lt;button</b><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;mirrorButton&quot;</span><b>&gt;</b>Mirror<b>&lt;/button&gt;</b>
+    <b>&lt;button</b><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;resetButton&quot;</span><b>&gt;</b>Reset<b>&lt;/button&gt;</b>
+    <b>&lt;button</b><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;fullscreenButton&quot;</span><b>&gt;</b>Fullscreen<b>&lt;/button&gt;</b>
+    <b>&lt;div</b><span style='color:#006e28;'> class=</span><span style='color:#bf0303;'>&quot;attribution&quot;</span><b>&gt;</b>Author: Ajarn Spencer Littlewood www.ajarnspencer.com in collaboration with Gemini CLI<b>&lt;/div&gt;</b>
+  <b>&lt;/div&gt;</b>
+  <b>&lt;div</b><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;marker&quot;</span><b>&gt;&lt;/div&gt;</b>
+  <b>&lt;div</b><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;teleprompter&quot;</span><span style='color:#006e28;'> class=</span><span style='color:#bf0303;'>&quot;teleprompter&quot;</span><b>&gt;</b>
+    <b>&lt;textarea</b><span style='color:#006e28;'> id=</span><span style='color:#bf0303;'>&quot;text&quot;</span><span style='color:#006e28;'> placeholder=</span><span style='color:#bf0303;'>&quot;Paste your script here...&quot;</span><b>&gt;&lt;/textarea&gt;</b>
+  <b>&lt;/div&gt;</b>
+  <b>&lt;script</b><span style='color:#006e28;'> src=</span><span style='color:#bf0303;'>&quot;script.js&quot;</span><b>&gt;&lt;/script&gt;</b>
+<b>&lt;/body&gt;</b>
+<b>&lt;/html&gt;</b></pre>
